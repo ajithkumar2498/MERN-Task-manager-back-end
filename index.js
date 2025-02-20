@@ -29,6 +29,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(morgan("dev"));
+
+app.get('/', (req, res) => {
+  res.send('Task Manager API is running...');
+});
+
 app.use("/api", routes);
 
 app.use(routeNotFound);
