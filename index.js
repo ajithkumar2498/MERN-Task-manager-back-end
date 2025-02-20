@@ -17,8 +17,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5000", "http://localhost:5001", "https://aktaskmanager.netlify.app"],
-    methods: ["GET", "POST", "DELETE", "PUT"],
+    origin: ["http://localhost:5000", "http://localhost:5001", "https://aktaskmanager.netlify.app", "https://aktaskmanager.netlify.app/login"],
+    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     credentials: true,
   })
 );
